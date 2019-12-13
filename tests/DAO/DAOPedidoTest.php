@@ -56,6 +56,7 @@
         $result = $DAO3->cadastrar($this->cliente);
         $this->cliente->setId($DAO3->lastId);
         // cria um carrinho
+        
         $this->carrinho = new Carrinho();
         $this->carrinho->addItem($this->produto->getId());
     }
@@ -67,6 +68,8 @@
         $obj->setFrete(20.00);
         $obj->setDias(5);
         $obj->setCliente($this->cliente);
+
+ 
 
         $DAO = new DAOPedido();
         $msg = $DAO->cadastrar($obj,$this->carrinho);
