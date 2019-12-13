@@ -24,7 +24,7 @@ body {
 }
 .center {
     margin-left: 10%; /*ou 25%*/
-    margin-top: ;
+   /* margin-top: ;*/
 }
 .btn {
     border: #db8a28 !important;
@@ -404,5 +404,8 @@ body {
     .nav-item::after{content:'';display:block;width:0px;height:2px;background:rgb(69, 119, 122);transition: 0.2s;}
     .nav-item:hover::after{width:100%;}
    
-  
+  .foto1{
+    height:auto !important;
+   width: auto !important;
+  }
 /* PARTE GABRIEL ^^*/
