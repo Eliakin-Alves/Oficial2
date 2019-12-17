@@ -27,12 +27,12 @@ class DAOPedido{
             
             $con2 = $pdo->prepare(
                 "INSERT INTO item_servico
-                    VALUES(:quantidade,:fk_pedido,:fk_produto)"
+                    VALUES(:quantidade,:fk_pedido,:fk_servico)"
             );
             
             foreach($carrinho->getItems() as $item){
                 
-                $con2->bindValue(":fk_produto", $item->getProduto()->getId());
+                $con2->bindValue(":fk_servico", $item->getProduto()->getId());
                 $con2->bindValue(":fk_pedido", $lastId);
                 $con2->bindValue(":quantidade", $item->getQuantidade());
                 $con2->execute();
