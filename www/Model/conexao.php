@@ -13,15 +13,15 @@
 
                 $conexao = new \PDO("mysql:host=mysql18-farm70.uni5.net; dbname=qualificarofic", "qualificarofic", "senac10058");
                 $conexao = new \PDO("mysql:host=mysql18-farm70.uni5.net; dbname=qualificarofic", "qualificarofic", "senac10058");*/
-                $conexao = new \PDO("mysql:host=localhost; dbname=bigode", "root", "");
+            //    $conexao = new \PDO("mysql:host=localhost; dbname=bigode", "root", "");
 
-                //$config = new Config();
-            //    $conexao = new \PDO("mysql:host={$config->serverHost}; dbname={$config->serverDB}", "{$config->serverUser}", "{$config->serverPass}");
+                $config = new Config();
+               // $conexao = new \PDO("mysql:host={$config->serverHost}; dbname={$config->serverDB}", "{$config->serverUser}", "{$config->serverPass}");
 
                 //$conexao = new \PDO("mysql:host=mysql18-farm70.uni5.net; dbname=qualificarofic", "qualificarofic", "senac10058");
-                // $conexao = new \PDO("mysql:host=localhost; dbname=bigode", "root", "");
+                 $conexao = new \PDO("mysql:host=localhost; dbname=bigode", "root", "");
                 
-                $config = new Config();
+             //   $config = new Config();
                 // $conexao = new \PDO("mysql:host={$config->serverHost}; dbname={$config->serverDB}", "{$config->serverUser}", "{$config->serverPass}");
                // $conexao = new \PDO("mysql:host=mysql18-farm70.uni5.net; dbname=qualificarofic", "qualificarofic", "senac10058"); // comentar esse
 
