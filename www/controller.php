@@ -173,10 +173,10 @@
              $view = "form-usuario.php";
              break;
 
-        case 'loginadm':
+        case 'logincliente':
             $obj = new \LOJA\API\UsuarioLogar;
             $msg = $obj->msg;
-            $view = "form-adm.php";
+            $view = "form-cliente-login.php";
             break;
             
         case 'paineladm':
@@ -228,6 +228,7 @@
         break;
 
         case 'pedidofinalizar':
+        \LOJA\incluedes\Seguranca::restritoUsuario();
         $obj = new \LOJA\API\PedidoCadastrar;
 
         $view = "form-cliente-login.php";
