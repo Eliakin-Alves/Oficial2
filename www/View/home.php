@@ -45,9 +45,9 @@
                 <img class="img-fluid" src="<?php echo $url;['imagem'] ?>/View/img/produtos/<?php echo $produto['imagem'] ?>" alt="Alternate Text" />
             </div>
             <div class="card-image-overlay m-auto">
-                <span class="card-detail-badge">Gratis:<?php  echo $produto['servico']?></span>
+                <span class="card-detail-badge">Gratis: <?php  echo $produto['servico']?></span>
                 <span class="card-detail-badge">R$:<?php echo number_format($produto['preco'],2,",",".");?></span>
-                <span class="card-detail-badge">13000 Kms</span>
+                
             </div>
             <div class="card-body text-center">
                 <div class="ad-title m-auto">

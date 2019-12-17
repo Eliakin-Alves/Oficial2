@@ -43,10 +43,10 @@
           </div>
         </div>
         <div class="row no-gutters social-container">
-          <div class="col"><a class="social-inner bg-yellow" href="#"><span class="icon mdi mdi-facebook"></span><span>Facebook</span></a></div>
-          <div class="col"><a class="social-inner bg-yellow" href="#"><span class="icon mdi mdi-instagram"></span><span>instagram</span></a></div>
-          <div class="col"><a class="social-inner bg-yellow" href="#"><span class="icon mdi mdi-twitter"></span><span>twitter</span></a></div>
-          <div class="col"><a class="social-inner bg-yellow" href="#"><span class="icon mdi mdi-youtube-play"></span><span>google</span></a></div>
+          <div class="col"><a class="social-inner bg-yellow" href="#"><span class="icon mdi mdi-facebook"></span>Facebook</a></div>
+          <div class="col"><a class="social-inner bg-yellow" href="#"><span class="icon mdi mdi-instagram"></span>instagram</a></div>
+          <div class="col"><a class="social-inner bg-yellow" href="#"><span class="icon mdi mdi-twitter"></span>twitter</a></div>
+          <div class="col"><a class="social-inner bg-yellow" href="#"><span class="icon mdi mdi-youtube-play"></span>google</a></div>
         </div>
     
     <!-- Optional JavaScript -->

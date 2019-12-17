@@ -408,4 +408,15 @@ body {
     height:auto !important;
    width: auto !important;
   }
+  .rodape{
+  background-color:  !important;
+
+  min-height:  !important;
+}
+.social-container{
+  
+  border-bottom: solid 1px blue; 
+  display: flex;
+  margin-right: 5%;
+}
 /* PARTE GABRIEL ^^*/
