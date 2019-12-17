@@ -33,7 +33,6 @@ class DAOProduto{
         return "Erro ao cadastrar";
     }
 }
-        //
         public function listaProduto(){
             $sql = "SELECT 
                         produto.nome,
