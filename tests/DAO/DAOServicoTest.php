@@ -5,13 +5,7 @@
 
     Class DAOCServicoTests extends TestCase
     {public $lastId;
-        /**
-         * @before
-         */
-        public function setUpDeleteAll() {
-            $DAO = new DAOServico();
-            $DAO->deleteAll();
-        }
+       
         public function testCadastro()
         {
             // dados

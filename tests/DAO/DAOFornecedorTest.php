@@ -4,13 +4,7 @@
     use LOJA\DAO\DAOFornecedor;
     Class DAOFornecedorTests extends TestCase
     {
-        /**
-         * @before
-         */
-        /*public function setUpDeleteAll() {
-            $DAO = new DAOFornecedor();
-            $DAO->deleteAll();
-        }*/
+        
         public function testCadastro()
         {
             $c = new Fornecedor();
