@@ -29,7 +29,6 @@
 
             foreach ($carrinho->getItems() as $item){
                 $produto = $item->getProduto();
-                
              
                 // Inicio HTML
             ?>
