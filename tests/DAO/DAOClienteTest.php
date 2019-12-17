@@ -4,13 +4,7 @@
     use LOJA\DAO\DAOCliente;
     Class DAOClienteTests extends TestCase
     {
-        /**
-         * @before
-         */
-        public function setUpDeleteAll() {
-            $DAO = new DAOCliente();
-            $DAO->deleteAll();
-        }
+        
         public function testCadastro()
         {
             // dados
