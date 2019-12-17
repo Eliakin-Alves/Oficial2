@@ -71,7 +71,9 @@
         $DAO = new DAOPedido();
         $msg = $DAO->cadastrar($obj,$this->carrinho);*/
 
-        $_SESSION['carrinho'] = $this ->carrinho;
+        $_SESSION['clienteid'] = $this->cliente->getId();
+        $_SESSION['clientenome'] = $this->cliente->getNome();
+        $_SESSION['carrinho'] = $this->carrinho;
 
         $obj = new \LOJA\API\PedidoCadastar;
         $this->assertEquals($msg,"Pedido efetuado com sucesso");
