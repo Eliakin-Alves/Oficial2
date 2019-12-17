@@ -149,6 +149,8 @@
             break;
             // PARTE DO FORNECEDOR ^^
 
+            
+
             // PARTE DOS ADMIN <>
         case 'usuariolistar':
               \LOJA\incluedes\Seguranca::restritoAdm();
@@ -173,10 +175,10 @@
              $view = "form-usuario.php";
              break;
 
-        case 'logincliente':
+        case 'loginadm':
             $obj = new \LOJA\API\UsuarioLogar;
             $msg = $obj->msg;
-            $view = "form-cliente-login.php";
+            $view = "form-adm.php";
             break;
             
         case 'paineladm':

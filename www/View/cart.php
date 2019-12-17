@@ -29,7 +29,7 @@
 
             foreach ($carrinho->getItems() as $item){
                 $produto = $item->getProduto();
-                $link = "http://localhost/lojavirtual/carrinho/remover/".$produto->getId();
+                $link = "http://localhost/Oficial2/www/carrinho/remover/".$produto->getId();
              
                 // Inicio HTML
             ?>
