@@ -12,7 +12,7 @@
 
             // se existir carrinho criado
             if(isset($_SESSION['carrinho'])) { // verifica se existe carrinho na sessão
-                $carrinho = $_SESSION['carinho']; // pega o carrinho
+                $carrinho = $_SESSION['carrinho']; // pega o carrinho
 
             // verifica se o produto ja existe no carrinho
             foreach($carrinho->getLista() as $item) { // verifica os itens do carrinho
@@ -20,11 +20,13 @@
 
                     $carrinho->removeItem($id); // excluir carrinho
                     $_SESSION['carrinho'] = $carrinho; // atualiza o carrinho na sessão
-                };
-            else {
+                }
+            }
+            }else {
                 header("location: http://www.qualificaroficina.web70113.uni5.net");
             }
             }
         }
-    }
+    
+    
 ?>

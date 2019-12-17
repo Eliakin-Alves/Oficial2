@@ -53,7 +53,7 @@
                 <div class="ad-title m-auto">
                     <h5><?php echo $produto['nome']?></h5>
                 </div>
-                <a class="ad-btn" href="<?php echo $url;?>/carrinho/adicionar">Comprar</a>
+                <a class="ad-btn" href="<?php echo $url;?>/carrinho/adicionar/<?php echo $produto ['id']?>">Comprar</a>
             </div>
         </div>
     </div>

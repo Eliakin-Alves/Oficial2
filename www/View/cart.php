@@ -29,7 +29,7 @@
 
             foreach ($carrinho->getItems() as $item){
                 $produto = $item->getProduto();
-                $link = "http://localhost/lojavirtual/carrinho/remover/".$produto->getId();
+                
              
                 // Inicio HTML
             ?>
@@ -56,9 +56,10 @@
                                 </div>
                             </div>
                             <div class="col-2 col-sm-2 col-md-2 text-right">
-                                <button type="button" class="btn btn-outline-danger btn-xs">
-                                    <a href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
-                                </button>
+                                
+
+                                    <a href="<?php echo $url; ?>/carrinho/remover/<?php echo $produto->getId(); ?>" class="btn btn-outline-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                               
                             </div>
                         </div>
                     </div>
@@ -95,9 +96,9 @@
                     </div>
                 </div>
                 <div class="pull-right" style="margin: 10px">
-                    <a href="" class="btn btn-success pull-right">Finalizar Compra</a>
+                    <a href="<?php echo $url;?>/pedido/finalizar" class="btn btn-success pull-right">Finalizar Compra</a>
                     <div class="pull-right" style="margin: 5px">
-                    Valor total: <b>R$50</b>
+                    Valor total: <b>R$</b>
                     </div>
                 </div>
             </div>
