@@ -22,7 +22,7 @@
 
             // PARTE DO SERVIÇO <>
         case 'servicocadastrar':
-            \LOJA\incluedes\Seguranca::restritoAdm();
+          //  \LOJA\incluedes\Seguranca::restritoAdm();
 
             $obj = new \LOJA\API\ServicoCadastrar;
             $msg = $obj->msg;

@@ -16,7 +16,7 @@
                 <h2 class="title title-primary">Bem-vindo de volta!</h2>
                 <p class="description description-primary">Para manter-se conectado conosco</p>
                 <p class="description description-primary">faça o login com suas informações pessoais</p>
-                <button id="signin" class="btn btn-primary">Logar</button>
+                <button id="login" class="btn btn-primary">Logar</button>
             </div>    
             <div class="second-column">
                 <h2 class="title title-second">Criar Conta</h2>
@@ -80,16 +80,16 @@
                 
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="nome" name="nome" placeholder="Nome">
+                        <input id="nome" type="nome" name="nome" placeholder="Nome">
                     </label>
                 
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" name="senha" placeholder="Senha">
+                        <input id="senha" type="password" name="senha" placeholder="Senha">
                     </label>
                 
                     <a class="password" href="#">Esqueceu sua senha ?</a>
-                    <button class="btn btn-second">Logar</button>
+                    <button id="login" class="btn btn-second">Logar</button>
                 </form>
             </div><!-- second column -->
         </div><!-- second-content -->

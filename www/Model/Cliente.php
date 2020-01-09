@@ -44,7 +44,7 @@ class Cliente{
 	}
 
 	public function setCpf($cpf){
-		if(Util::validaCPF($cpf)) throw new \Exception('Cpf Inválido');
+		//if(Util::validaCPF($cpf)) throw new \Exception('Cpf Inválido');
 		$this->cpf = $cpf;
 	}
 
