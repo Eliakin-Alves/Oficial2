@@ -47,8 +47,14 @@
     
     <p class="perfil"><a href="#">Vizualizar Perfil</a></p>
     </div>
-    <hr>
-    <a class="dropdown-item azul" href="http://localhost/Oficial2/www/painel/logoff"><i class="fas fa-sign-out-alt"></i>Sair</a>
+    <div class="menucliente no-centro">
+    <hr class="preto">
+   <!-- <h6 class="saileft0 "><strong>CONTA</strong></h6>-->
+   <a class="white" href="#"> Configurações </a>
+    <a href="#" class="white"> Privacidade</a>
+    <hr class="preto">
+    </div>
+    <a class="dropdown-item azul" href="http://localhost/Oficial2/www/painel/logoff"><i class="fas fa-sign-out-alt sairight0"></i>Sair</a>
   </div>
 
 

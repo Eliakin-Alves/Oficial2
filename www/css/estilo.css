@@ -147,9 +147,9 @@ color: white;
 }
 
 
-.card{
-   /* margin-top: 5%;*/
-}
+/* .card{
+    margin-top: 5%;
+}*/
 
 
 
@@ -425,4 +425,19 @@ background-color: #bbb;
 .sairight0{
   margin-right: 5px;
 }
+.saileft0{
+  margin-left: 5px;
+}
+
+.menucliente{
+  background-color: #bbb;
+  
+}
+.preto{
+  background-color: #bbbb;
+}
+.white{
+  color: #fff;
+}
+
 /* PARTE GABRIEL ^^*/

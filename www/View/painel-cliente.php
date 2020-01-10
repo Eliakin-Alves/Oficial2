@@ -11,7 +11,7 @@
 
    <p></p>
     <!--<a class="btn btn-primary" href="http://www.qualificaroficina.web70113.uni5.net/painel/logoff">Sair</a>-->
-
+    
     <div class="jumbotron alert alert-dismissible fade show">
   <h1 class="display-4">Olá, Bem-vindo!</h1>
   <p class="lead">Esse é o Seu Painel , Onde você consegue atulizar seus dados e vê seus Pedidos.</p>
@@ -20,7 +20,23 @@
   <a type="button" data-dismiss="alert" aria-label="Close" class="btn btn-primary btn-lg" href="#" role="button">Fecha</a>
   
 </div>
+
+<!------ Include the above in your HEAD tag ---------->
+
+
+
+        <div class="col-sm-3 col-sm-offset-4 frame">
+            <ul></ul>
+            <div>
+                <div class="msj-rta macro" style="margin:auto">                        
+                    <div class="text text-r" style="background:whitesmoke !important">
+                        <input class="mytext" placeholder="Olá , como posso Ajuda ?"/>
+                    </div> 
+                </div>
+            </div>
+        </div>        
   
+
 
 
     
