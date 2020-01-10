@@ -19,7 +19,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-dark ">
         <div class="container">
-            <a class="navbar-brand bg-yellow cont" href="#"><img src="../img/logo.png" class="logo" alt=""></a>
+            <a class="navbar-brand bg-yellow cont" href="http://localhost/Oficial2/www/"><img src="../img/logo.png" class="logo" alt=""></a>
             <button class="navbar-toggler bg-yellow-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>

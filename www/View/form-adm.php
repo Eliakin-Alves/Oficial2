@@ -16,7 +16,7 @@
                 <h2 class="title title-primary">Bem-vindo de volta!</h2>
                 <p class="description description-primary">Para manter-se conectado conosco</p>
                 <p class="description description-primary">faça o login com suas informações pessoais</p>
-                <button id="login" class="btn btn-primary">Logar</button>
+                <button id="signin" class="btn btn-primary">Logar</button>
             </div>    
             <div class="second-column">
                 <h2 class="title title-second">Criar Conta</h2>
