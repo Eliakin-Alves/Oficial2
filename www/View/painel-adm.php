@@ -3,17 +3,7 @@
 
 
 <!-- Example single danger button -->
-<div class="btn-group p">
-  <button type="button" class="btn btn-primary dropdown-toggle p" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cog"></i>
-  Settings <span class="badge badge-light">2</span>
-  </button>
-  <div class="dropdown-menu">
-    <p>O Cliente Coringa Acaba de efetua um Pedido Pelo serviço de alinhamento</p>
-    <hr>
-    <a class="dropdown-item  azul1" href="#">Verificar</a>
-    <a class="dropdown-item azul" href="http://localhost/Oficial2/www/paineladm/logoff"><i class="fas fa-sign-out-alt"></i>Sair</a>
-  </div>
-</div>
+
 
     <?php  echo $_SESSION['usuarionome'];?>
     <!-- Button trigger modal -->
@@ -27,5 +17,13 @@
 
     
 
-
-<?php include "View/footer-adm.php";?>
+   <script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/price-range.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </footer>

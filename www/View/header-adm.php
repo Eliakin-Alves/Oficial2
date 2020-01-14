@@ -18,7 +18,8 @@
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="<?php echo $url;?>/painel/adm"> ADM</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+  aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -88,6 +89,17 @@
     </ul>
    
   </div>
+  <div class="btn-group p sairight">
+  <button type="button" class="btn btn-primary dropdown-toggle p" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-cog"></i>
+  Settings <span class="badge badge-light">2</span>
+  </button>
+  <div class="dropdown-menu">
+    <p>O Cliente Coringa Acaba de efetua um Pedido Pelo serviço de alinhamento</p>
+    <hr>
+    <a class="dropdown-item  azul1" href="#">Verificar</a>
+    <a class="dropdown-item azul" href="http://localhost/Oficial2/www/paineladm/logoff"><i class="fas fa-sign-out-alt"></i>Sair</a>
+  </div>
+</div>
   
 </nav>
 <div class="container">
