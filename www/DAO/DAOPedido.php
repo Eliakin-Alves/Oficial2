@@ -19,7 +19,7 @@ class DAOPedido{
                     
             );
             $con->bindValue(":data_pedido", $pedido->getData());
-            $con->bindValue("frete", $pedido->getFrete());
+            $con->bindValue(":frete", $pedido->getFrete());
             $con->bindValue(":dias", $pedido->getDias());
             $con->bindValue(":fk_cliente", $pedido->getCliente()->getId());
             $con->execute();
@@ -46,7 +46,7 @@ class DAOPedido{
         }
     }
 
-    public function listarPedidoCliente($idCliente);{
+    public function listarPedidoCliente($idCliente){
         $sql="SELECT 
         pedido.data_pedido,
         sum(produto.preco*item.quantidade) AS total

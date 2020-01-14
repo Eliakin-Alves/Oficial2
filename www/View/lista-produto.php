@@ -1,5 +1,15 @@
 
 <?php include "View/header.php";?>
+<aside>
+<div>
+    <ul>
+        <li>oi</li>
+        <li>oi</li>
+        <li>oi</li>
+        <li>oi</li>
+    </ul>
+</aside>
+<section>
 <table class="table">
     <thead>
         <tr>
@@ -31,4 +41,5 @@
         <?php } ?>
     </tbody>
 </table>
+</section>
 <?php include "View/footer.php";?>
