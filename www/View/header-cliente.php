@@ -19,10 +19,8 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-dark ">
         <div class="container">
-            <a class="navbar-brand bg-yellow cont" href="#"><img src="../img/logo.png" class="logo" alt=""></a>
-            <button class="navbar-toggler bg-yellow-btn" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <a class="navbar-brand bg-yellow cont" href="http://localhost/Oficial2/www/"><img src="../img/logo.png" class="logo" alt=""></a>
+            
            
                
                    
@@ -39,7 +37,7 @@
 
 <div class="btn-group p sairight">
   <button type="button" class="btn btn-primary dropdown-toggle p" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-cog"></i>
-  Settings <span class="badge badge-light">2</span>
+  Settings <span class="badge badge-light">3</span>
   </button>
   <div class="dropdown-menu">
   <div class="no-centro">
