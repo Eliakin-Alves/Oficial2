@@ -1,13 +1,12 @@
-<?php //include "View/header.php";?>
-
-
-
 <div class="container">
 
 <link rel="stylesheet" href="../2css/style.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
         integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+<<<<<<< HEAD
+
+=======
         
         <div class="content first-content">
         
@@ -76,20 +75,21 @@
                     </ul>
                 </div><!-- social media -->
                 <p class="description description-second">ou use sua conta do site:</p>
+>>>>>>> 75e9dd221326eee3cfedb0f8b34a07599ff13e29
                 <form class="form" method="post" action="adm">
                 
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="nome" name="nome" placeholder="Nome">
+                        <input id="nome" type="nome" name="nome" placeholder="Nome">
                     </label>
                 
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" name="senha" placeholder="Senha">
+                        <input id="senha" type="password" name="senha" placeholder="Senha">
                     </label>
                 
                     <a class="password" href="#">Esqueceu sua senha ?</a>
-                    <button class="btn btn-second">Logar</button>
+                    <button id="login" class="btn btn-second">Logar</button>
                 </form>
             </div><!-- second column -->
         </div><!-- second-content -->

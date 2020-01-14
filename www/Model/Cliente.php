@@ -3,6 +3,7 @@
 	namespace LOJA\Model;
 	use LOJA\incluedes\Util;
 
+//Represeta o banco de dados^/ Igual o que esta no banco de dados */ ~~
 class Cliente{
     private $id;
     private $nome;
@@ -13,7 +14,7 @@ class Cliente{
     private $email;
     private $senha;
 
-
+// ^^
     public function __construct(){
     
     }
@@ -44,7 +45,7 @@ class Cliente{
 	}
 
 	public function setCpf($cpf){
-		if(Util::validaCPF($cpf)) throw new \Exception('Cpf Inválido');
+		//if(Util::validaCPF($cpf)) throw new \Exception('Cpf Inválido');
 		$this->cpf = $cpf;
 	}
 

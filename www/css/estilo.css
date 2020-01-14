@@ -147,9 +147,9 @@ color: white;
 }
 
 
-.card{
-   /* margin-top: 5%;*/
-}
+/* .card{
+    margin-top: 5%;
+}*/
 
 
 
@@ -288,7 +288,7 @@ div ul li{
   }
   .no-centro{
    
-    text-align: center;
+    text-align: center ;
     
     
   }
@@ -408,15 +408,36 @@ body {
     height:auto !important;
    width: auto !important;
   }
-  .rodape{
-  background-color:  !important;
-
-  min-height:  !important;
-}
+  
 .social-container{
   
   border-bottom: solid 1px blue; 
   display: flex;
   margin-right: 5%;
 }
+.perfil{
+color: #1E9ACD;
+background-color: #bbb;
+}
+.sairight{
+  margin-right: 10%;
+}
+.sairight0{
+  margin-right: 5px;
+}
+.saileft0{
+  margin-left: 5px;
+}
+
+.menucliente{
+  background-color: #bbb;
+  
+}
+.preto{
+  background-color: #bbbb;
+}
+.white{
+  color: #fff;
+}
+
 /* PARTE GABRIEL ^^*/

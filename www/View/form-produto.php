@@ -35,7 +35,7 @@
     <div class="form-group">
       <label class="col-md-4 control-label" for="servico"></label>  
       <div class="col-md-4">
-      <select name="servico" class="form-control input-md">
+      <select  id="servico" name="servico" class="form-control input-md">
       <?php foreach($lista as $servico) { ?>
         <option value="<?php echo $servico['pk_servico']?>"><?php echo $servico['nome']?>  </option>
       <?php } ?> 
