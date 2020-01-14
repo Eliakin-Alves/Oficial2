@@ -61,21 +61,22 @@
     <?php foreach($lista as $produto) { ?>
     
     <!-- Category Card -->
-    <div class="col-md-4 top">
+    <div class="col-md-4 top ">
         <div class="card rounded ">
-            <div class="card-image">
+            <div class="card-image box21">
                 <span class="card-notify-badge">Ótimo Rendimento</span>
                 <span class="card-notify-year">2019</span>
-                <img class="img-fluid" src="<?php echo $url;['imagem'] ?>/View/img/produtos/<?php echo $produto['imagem'] ?>" alt="Alternate Text" />
+                <img class="img-fluid" src="<?php echo $url;['imagem'] ?>/View/img/produtos/<?php echo $produto['imagem'] ?>" 
+                alt="Alternate Text" />
             </div>
-            <div class="card-image-overlay m-auto">
+            <div class="card-image-overlay m-auto ">
                 <span class="card-detail-badge">Gratis: <?php  echo $produto['servico']?></span>
                 <span class="card-detail-badge">R$:<?php echo number_format($produto['preco'],2,",",".");?></span>
                 
             </div>
             <div class="card-body text-center">
                 <div class="ad-title m-auto">
-                    <h5><?php echo $produto['nome']?></h5>
+                    <h5><?php echo $produto['nome']?></h5> <a class="detalhe" href="/Oficial2/www/detalhes/produto" ><i class="fas fa-info-circle fa-2x "></i></a>
                 </div>
                 <a class="ad-btn" href="<?php echo $url;?>/carrinho/adicionar/<?php echo $produto ['id']?>">Comprar</a>
             </div>
