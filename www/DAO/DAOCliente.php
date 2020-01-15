@@ -67,6 +67,7 @@ class DAOCliente{
         $con->bindValue(":nome", $cliente->getNome());
         $con->bindValue(":senha", $cliente->getSenha());
         $con->execute();
+        $con->bindValue(":endereco", $cliente->getEndereco());
         
       
         $cliente = new Cliente();
