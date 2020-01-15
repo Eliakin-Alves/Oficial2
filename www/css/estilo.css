@@ -301,7 +301,7 @@ div ul li{
   }
   .no-centro{
    
-    text-align: center ;
+    text-align: center !important;
     
     
   }
@@ -441,7 +441,7 @@ background-color: #bbb;
   margin-right: 5px;
 }
 .saileft0{
-  margin-left: 5px;
+  margin-left: 5px !important;
 }
 
 .menucliente{
@@ -476,8 +476,16 @@ background-color: #bbb;
 
 
 .box21 img{width:100%;height:auto}
-
-
+.reajusti{
+  max-width: 268px;
+  max-height: 268px;
+}
+.oll{
+  float: left !important;
+}
+.oll1{
+  float: right !important;
+}
 .tmme{
   float: left;
   max-width:59%;
@@ -494,4 +502,15 @@ background-color: #bbb;
 }
 @media only screen and (max-width:359px){.box21 .title{padding-bottom:10px}
 }
-/* PARTE GABRIEL ^^*/
+
+.rodape {
+  position: relative;
+  bottom:0;
+  
+  
+  width:100%;
+}
+.no-dio{
+  text-align: center;
+}
+/* PARTE GABRIEL*/

@@ -7,7 +7,7 @@
 <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<footer class="rodape section footer-classic navbar navbar-expand-lg navbar-light bg-light bg-image">
+<footer class="rodape footer-classic navbar navbar-expand-lg navbar-light bg-light bg-image">
         <div class="container">
           <div class="row row-30">
             <div class="col-md-4 col-xl-5">

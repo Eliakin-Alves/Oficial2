@@ -52,6 +52,12 @@
             $view = "form-cliente-login.php";
             break;
 
+            case 'pagamentopay':
+                $obj = new \LOJA\API\ClienteListar;
+                $lista = $obj->lista;
+                $view = "pagamento-pay.php";
+                break;
+
         case 'clientelistar':
             \LOJA\incluedes\Seguranca::restritoAdm();
             $obj = new \LOJA\API\ClienteListar;
