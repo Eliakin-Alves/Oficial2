@@ -22,7 +22,61 @@
 </div>
 
 <!------ Include the above in your HEAD tag ---------->
+<!------ Include the above in your HEAD tag ---------->
 
+<div class="container">
+	<div class="row">
+		<div class="col-sm-4 col-md-4 user-details">
+            <div class="user-image">
+                <img src="http://www.gravatar.com/avatar/2ab7b2009d27ec37bffee791819a090c?s=100&d=mm&r=g" alt="Karan Singh Sisodia" title="Karan Singh Sisodia" class="img-circle">
+            </div>
+            <div class="user-info-block">
+                <div class="user-heading">
+                    <h3><?php  echo $_SESSION['clientenome'];?></h3>
+                    <span class="help-block"><?php  echo $_SESSION['clientenome'];?></span>
+                </div>
+                <ul class="navigation">
+                    <li class="active">
+                        <a data-toggle="tab" href="#information">
+                            <span class="glyphicon glyphicon-user"><i class="fas fa-user-alt"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#settings">
+                            <span class="glyphicon glyphicon-cog"><i class="fas fa-user-cog"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#email">
+                            <span class="glyphicon glyphicon-envelope"><i class="fas fa-mail-bulk"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="tab" href="#events">
+                            <span class="glyphicon glyphicon-calendar"><i class="fas fa-shopping-cart"></i></span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="user-body">
+                    <div class="tab-content">
+                        <div id="information" class="tab-pane active">
+                            <h4>Informação da conta</h4>
+                        </div>
+                        <div id="settings" class="tab-pane">
+                            <h4>Configurações</h4>
+                        </div>
+                        <div id="email" class="tab-pane">
+                            <h4>Enviar mensagem</h4>
+                        </div>
+                        <div id="events" class="tab-pane">
+                            <h4>Produtos</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
 
 
           
