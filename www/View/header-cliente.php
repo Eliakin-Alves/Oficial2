@@ -26,7 +26,7 @@
                    
                    <div class="">
                         <div type="" class="" ><a href="#">
-                        <i class="fas fa-user sairight0"></i></a><?php  echo $_SESSION['clientenome'];?></div>
+                        <i class="fas fa-user sairight0"></i></a><?php  echo $_SESSION['clientenome'];?> </div>
                         
                    </div>
                
