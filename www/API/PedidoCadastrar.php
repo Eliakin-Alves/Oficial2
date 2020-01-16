@@ -7,8 +7,18 @@
  use LOJA\DAO\DAOPedido;
 
  class PedidoCadastrar{
+
      public $msg;
-     function __construct(){
+
+     function __construct($url){
+
+        if(isset($_SESSION['clienteid'])){
+            $this->efetuarPedido();
+        }else{
+            header("location: ".$url."/login/cliente");
+        }
+     }
+     function efetuarPedido(){
 
         try{
             $c =new Cliente();
@@ -29,6 +39,10 @@
         }catch(Exception $e){
             $this->msg = $e->getMessage();
         }
+
+
+
+
      }
      
  }
