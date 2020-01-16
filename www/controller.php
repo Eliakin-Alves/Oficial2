@@ -57,7 +57,11 @@
                 $lista = $obj->lista;
                 $view = "pagamento-pay.php";
                 break;
-
+                case 'pedidopagamento':
+                    //$obj = new \LOJA\API\ClienteListar;
+                   // $lista = $obj->lista;
+                    $view = "pagamento-pay.php";
+                    break;
         case 'clientelistar':
             \LOJA\incluedes\Seguranca::restritoAdm();
             $obj = new \LOJA\API\ClienteListar;
@@ -241,8 +245,8 @@
         break;
 
         case 'pedidofinalizar':
-        \LOJA\incluedes\Seguranca::restritoUsuario();
-        $obj = new \LOJA\API\PedidoCadastrar;
+      //  \LOJA\incluedes\Seguranca::restritoUsuario();
+        $obj = new \LOJA\API\PedidoCadastrar($url);
 
         $view = "form-cliente-login.php";
         break;
