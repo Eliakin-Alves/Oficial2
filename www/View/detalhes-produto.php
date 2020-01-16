@@ -22,7 +22,7 @@
 
 <div class="oll1 no-dio saitop">
 
-  <h2 class="sairight0">Pneu ilustrativo</h2>
+  <h2 class="sairight0"><?php  echo $_SESSION['produtonome'];?></h2>
   <h5 class="">Nome ilustrativo do Produto</h5>
    
   </div>
