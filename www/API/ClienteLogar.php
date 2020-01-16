@@ -6,7 +6,7 @@ use LOJA\Model\Cliente;
     class ClienteLogar{
         public $msg;
 
-        function __construct(){
+        function __construct($url){
             if($_POST){
                 try{
                     $obj = new Cliente();
@@ -16,6 +16,7 @@ use LOJA\Model\Cliente;
                     $DAO = new DAOCliente();
                     // Verifica se existe usuario com nome e senha informados
                     $result = $DAO->buscoPorNomeSenha($obj);
+                    $this->verificarUrl($url);
 
                     if($result){//se houver resultado
                         //guardo as informações do usuario na sessão
@@ -30,6 +31,16 @@ use LOJA\Model\Cliente;
                 }catch(\Exception $e){
                     $this->msg = $e->getMessage();
                 }
+            }
+        }
+        function verificarUrl($url){
+            
+            if(isset($_SESSION['url'])){
+                $url2 = $_SESSION['url'];
+                unset($_SESSION['url']);
+                header("location:".$url2);
+            }else{
+                header("location: ".$url."/painel/cliente");
             }
         }
     }
