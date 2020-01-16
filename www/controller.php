@@ -90,7 +90,7 @@
             break;
             case 'meucadastro':
            
-                $obj = new \LOJA\API\ClienteLogar;
+                $obj = new \LOJA\API\ClienteLogar($url);
                     
                 $view = "atulizar-dados.php";
                 break;   

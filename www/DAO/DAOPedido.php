@@ -21,7 +21,7 @@ class DAOPedido{
             $con->bindValue(":data_pedido", $pedido->getData());
             $con->bindValue(":frete", $pedido->getFrete());
             $con->bindValue(":dias", $pedido->getDias());
-            $con->bindValue(":fk_cliente", $pedido->getCliente()->getId());
+            $con->bindValue(":fk_cliente",$_SESSION['clienteid']);
             $con->execute();
             $lastId= $pdo->lastInsertId();
             $_SESSION['idpedido'] = $lastId;

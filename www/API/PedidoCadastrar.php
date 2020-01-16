@@ -14,7 +14,12 @@
 
         if(isset($_SESSION['clienteid'])){
             $this->efetuarPedido();
+
+            header("location: ".$url."/pedido/pagamento");
+
         }else{
+            $_SESSION['url'] = $url."/pedido/finalizar";
+
             header("location: ".$url."/login/cliente");
         }
      }

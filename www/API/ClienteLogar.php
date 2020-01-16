@@ -33,12 +33,22 @@ use LOJA\Model\Cliente;
                 }
             }
         }
+
+        function verificarUrl($url){
+            
+            if(isset($_SESSION['url'])){
+                $url2 = $_SESSION['url'];
+                unset($_SESSION['url']);
+                header("location:".$url2);
+            }else{
+
         function verificarUrl($url) {
             if(isset($_SESSION['url'])) {
                 $url2 = $_SESSION['url'];
                 unset($_SESSION['url']);
                 header("location:".$url2);
             }else {
+
                 header("location: ".$url."/painel/cliente");
             }
         }
