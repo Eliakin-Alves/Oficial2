@@ -27,20 +27,14 @@ use LOJA\Model\Cliente;
                         header("location: http://localhost/Oficial2/www/painel/cliente");
                     }else{
                         $this->msg = "Cliente/Senha inválidos";
-                    }
+                    
                 }catch(\Exception $e){
                     $this->msg = $e->getMessage();
                 }
             }
         }
 
-        function verificarUrl($url){
-            
-            if(isset($_SESSION['url'])){
-                $url2 = $_SESSION['url'];
-                unset($_SESSION['url']);
-                header("location:".$url2);
-            }else{
+    }
 
         function verificarUrl($url) {
             if(isset($_SESSION['url'])) {
@@ -53,4 +47,6 @@ use LOJA\Model\Cliente;
             }
         }
     }
+
+
 ?>
