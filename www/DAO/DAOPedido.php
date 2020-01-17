@@ -35,7 +35,7 @@ class DAOPedido{
                 
                 $con2->bindValue(":fk_servico", $item->getProduto()->getId());
                 $con2->bindValue(":fk_pedido", $lastId);
-                $con    2->bindValue(":quantidade", $item->getQuantidade());
+                $con2->bindValue(":quantidade", $item->getQuantidade());
                 $con2->execute();
             }
             $pdo->commit();
