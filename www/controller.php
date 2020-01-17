@@ -84,7 +84,7 @@
             break;
         case 'painelcliente':
            
-            $obj = new \LOJA\API\ClienteLogar;
+            $obj = new \LOJA\API\ClienteLogar($url);
                 
             $view = "painel-cliente.php";
             break;
