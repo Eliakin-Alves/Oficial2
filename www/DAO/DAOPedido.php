@@ -65,6 +65,37 @@ class DAOPedido{
           $result = $con->execute();
 
     }
+    public function buscaPorId($id){
+
+        $sql = "SELECT 
+        pedido.data_pedido,
+        pedido.frete,
+        pedido.dias,
+        sum(produto.preco*item.quantidade) AS total
+        
+          FROM pedido INNER JOIN cliente
+          ON pedido.fk_cliente = cliente.pk_cliente
+          INNER JOIN item
+          ON item.fk_pedido = pedido.pk_pedido
+          INNER JOIN produto
+          ON produto.pk_produto = item.fk_produto
+          WHERE pedido.pk_pedido = :id";
+
+        $con = Conexao::getInstance()->prepare($sql);
+
+        $con->bindValue(":id", $id);
+        
+        $con->execute();
+
+        $con = new Pedido();
+
+        $pedido->setFrete($obj['frete']);
+
+        $pedido = $con->fetch(\PDO::FETCH_ASSOC);
+       // ($pedido);//testa saida 
+        return $pedido;
+
+    }
 }
 
     
