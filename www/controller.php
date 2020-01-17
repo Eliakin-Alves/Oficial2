@@ -57,11 +57,14 @@
                 $lista = $obj->lista;
                 $view = "pagamento-pay.php";
                 break;
-                case 'pedidopagamento':
-                    //$obj = new \LOJA\API\ClienteListar;
-                   // $lista = $obj->lista;
-                    $view = "pagamento-pay.php";
-                    break;
+
+        case 'pedidopagamento':
+            
+             $obj = new \LOJA\API\PagamentoVizualizar;
+             $pedido = $obj->dados;
+             $view = "pagamento-pay.php";
+        break;
+
         case 'clientelistar':
             \LOJA\incluedes\Seguranca::restritoAdm();
             $obj = new \LOJA\API\ClienteListar;

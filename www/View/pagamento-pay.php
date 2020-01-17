@@ -1,7 +1,7 @@
 <?php include "View/header.php"; ?>
 <link rel="stylesheet" href="css/estilo.css">
 
-<?php echo $_SESSION['idpedido'];?>
+
 
 
 <div class="card text-center">
@@ -19,6 +19,7 @@
       <label for="inputEmail4">Email</label>
       <input type="email" class="form-control" id="inputEmail4">
     </div>
+   
     <div class="form-group col-md-6">
       <label for="inputPassword4">Nome Completo</label>
       <input type="name" class="form-control" id="inputPassword4">
@@ -62,6 +63,10 @@
 <hr>
 <h4 class="mb-3">Pagamento <button type="button" class="btn btn-light">Gerar Boleto</button></h4>
 
+<?php echo $_SESSION['idpedido'];?>
+<input id="frete" name="frete" type="text" placeholder="Frete" value="<?php echo $pedido['data_pedido']; ?>"  
+class="form-control input-md" required="">
+<h6> </h6>
 <div class="d-block my-3">
   <div class="custom-control custom-radio">
     <input id="credito" name="paymentMethod" type="radio" class="custom-control-input" checked required>

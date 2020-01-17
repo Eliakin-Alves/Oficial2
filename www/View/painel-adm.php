@@ -4,15 +4,21 @@
 
 <!-- Example single danger button -->
 
-
+<div class="oll1">
     <?php  echo $_SESSION['usuarionome'];?>
     <!-- Button trigger modal -->
    
-   <p></p>
+</div>
     
-
-
-  
+   
+</div>
+<div class="navbar-light nav-item bg-light vertical-menu">
+  <a href="#" class=""><i class="farra far fa-file"></i> <strong class="mr-auto">Pedidos </strong></a>
+  <a href="#"><i class="farra fab fa-opencart"></i> <strong class="mr-auto">Produtos </strong></a>
+  <a href="#"><i class="farra fas fa-users"></i> <strong class="mr-auto">Clientes </strong></a>
+  <a href="#"><i class="farra far fa-chart-bar"></i> <strong class="mr-auto">Relatórios </strong></a>
+  <a href="#">Link 4</a>
+</div>
 
 
     

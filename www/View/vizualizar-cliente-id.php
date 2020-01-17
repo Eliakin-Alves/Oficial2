@@ -11,7 +11,8 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="nome"></label>  
   <div class="col-md-4">
-  <input id="nome" name="nome" value="<?php echo $cliente['nome']; ?>"   type="text" placeholder="Nome" class="form-control input-md" required="">
+  <input id="nome" name="nome" value="<?php echo $cliente['nome']; ?>"  
+   type="text" placeholder="Nome" class="form-control input-md" required="">
     
   </div>
 </div>
