@@ -16,13 +16,13 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img/" class="d-block w-100" alt="...">
+      <img src="img/BannerqualifiCAR.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="img/QualifiCAR (1).png" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="img/olha.png" class="d-block w-100" alt="...">
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
