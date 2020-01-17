@@ -7,7 +7,7 @@
 
     <?php  echo $_SESSION['usuarionome'];?>
     <!-- Button trigger modal -->
-
+   
    <p></p>
     
 

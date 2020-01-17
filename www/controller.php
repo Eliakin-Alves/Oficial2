@@ -47,7 +47,7 @@
            
             // PARTE DO CLIENTE <>
         case 'logincliente':
-            $obj = new \LOJA\API\ClienteLogar;
+            $obj = new \LOJA\API\ClienteLogar($url);
             $msg = $obj->msg;
             $view = "form-cliente-login.php";
             break;
