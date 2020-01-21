@@ -30,7 +30,7 @@
                 alt="Alternate Text" />
             </div>
             <div class="card-image-overlay m-auto ">
-                <span class="card-detail-badge">Gratis: <?php  echo $produto['servico']?></span>
+                <!-- <span class="card-detail-badge">Gratis: <?php  //echo $produto['servico']?></span> -->
                 <span class="card-detail-badge">R$:<?php echo number_format($produto['preco'],2,",",".");?></span>
                 
             </div>
