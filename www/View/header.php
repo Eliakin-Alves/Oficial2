@@ -58,5 +58,29 @@
                 </div>
             </div>
 </div>
+
+<div class="btn-group p sairight">
+  <button type="button" class="btn btn-primary dropdown-toggle p" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-cog"></i>
+  Settings <span class="badge badge-light">3</span>
+  </button>
+  <div class="dropdown-menu">
+  <div class="no-centro">
+    <?php  echo $_SESSION['clientenome'];?>
+    
+    <p class="perfil"><a href="#">Vizualizar Perfil</a></p>
+    </div>
+    <div class="menucliente no-centro">
+    <hr class="preto">
+   <!-- <h6 class="saileft0 "><strong>CONTA</strong></h6>-->
+   <a class="white" href="#"> Configurações </a>
+    <a href="#" class="white"> Privacidade</a>
+    <hr class="preto">
+    </div>
+    <a class="dropdown-item azul" href="http://localhost/Oficial2/www/painel/logoff"><i class="fas fa-sign-out-alt sairight0"></i>Sair</a>
+  </div>
+
+
+
+</div>
     </nav>
     <div class="container">
