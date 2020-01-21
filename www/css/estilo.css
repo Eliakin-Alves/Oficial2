@@ -35,7 +35,7 @@ body {
     border-color: #db8a28 !important;
 }
 .cont {
-    margin-left: 0%;
+    margin-left: 10px;
 }
 .my-lg-0 {
     margin-left: 25% !important;
@@ -534,7 +534,9 @@ color: rgb(194, 181, 181);
 .farra:hover{
   color: #000;
 }
-
+.texx{
+  text-decoration: solid !important;
+}
 
 
 /* PARTE GABRIEL*/
