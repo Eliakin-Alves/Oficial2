@@ -27,13 +27,13 @@ class DAOPedido{
             $_SESSION['idpedido'] = $lastId;
             
             $con2 = $pdo->prepare(
-                "INSERT INTO item_servico
-                    VALUES(:quantidade,:fk_pedido,:fk_servico)"
+                "INSERT INTO item
+                    VALUES(:quantidade,:fk_pedido,:fk_produto)"
             );
             
             foreach($carrinho->getItems() as $item){
                 
-                $con2->bindValue(":fk_servico", $item->getProduto()->getId());
+                $con2->bindValue(":fk_produto", $item->getProduto()->getId());
                 $con2->bindValue(":fk_pedido", $lastId);
                 $con2->bindValue(":quantidade", $item->getQuantidade());
                 $con2->execute();
@@ -78,22 +78,21 @@ class DAOPedido{
           INNER JOIN item
           ON item.fk_pedido = pedido.pk_pedido
           INNER JOIN produto
-          ON produto.pk_produto = item.fk_produto
+          ON produto.pk_produto = item.pk_produto
           WHERE pedido.pk_pedido = :id";
 
-        $con = Conexao::getInstance()->prepare($sql);
+            $con = Conexao::getInstance()->prepare($sql);
+            $con->bindValue(":id", $id);
+            $con->execute();
+            $obj = $con->fetch(\PDO::FETCH_ASSOC);
 
-        $con->bindValue(":id", $id);
-        
-        $con->execute();
+            $pedido = new Pedido();
 
-        $con = new Pedido();
+            $pedido->setDias($obj['dias']);
+            $pedido->setFrete($obj['frete']);
+            //$pedido->setTotal($obj['total']);
 
-        $pedido->setFrete($obj['frete']);
-
-        $pedido = $con->fetch(\PDO::FETCH_ASSOC);
-       // ($pedido);//testa saida 
-        return $pedido;
+            return $pedido;
 
     }
 }

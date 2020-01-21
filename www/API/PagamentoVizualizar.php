@@ -5,19 +5,13 @@ use LOJA\DAO\DAOPedido;
 
     class PagamentoVizualizar{
 
-        public $dados;
-
-        public function __construct(){
+        public $pagamento;
     
-
-        try{
-            $DAO = new DAOPedido();
-            $this->dados = $DAO->buscaPorId($_GET['id']);
-            
-        }catch(\Exception $e){
-            $this->dados = $e->getMessage();
-        }
-    }  
+    function __construct(){
+    
+        $obj = new DAOPedido();
+        $this->pagamento = $obj->buscaPorId($_SESSION['idpedido']);
+    }
 }
 
 ?>

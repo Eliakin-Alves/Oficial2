@@ -16,7 +16,7 @@ use LOJA\Model\Cliente;
                     $DAO = new DAOCliente();
                     // Verifica se existe usuario com nome e senha informados
                     $result = $DAO->buscoPorNomeSenha($obj);
-                    $this->verificarUrl($url);
+                    
 
                     if($result){//se houver resultado
                         //guardo as informações do usuario na sessão
@@ -24,7 +24,10 @@ use LOJA\Model\Cliente;
                         $_SESSION['clientenome'] = $result['nome'];
 
                         //header("location: http://www.qualificaroficina.web70113.uni5.net/painel/cliente");
-                        header("location: http://localhost/Oficial2/www/painel/cliente");
+                        //
+                        $this->verificarUrl($url);
+                       
+                        echo "ok";
                     }else{
                         $this->msg = "Cliente/Senha inválidos";
                     }    
@@ -32,15 +35,17 @@ use LOJA\Model\Cliente;
                     $this->msg = $e->getMessage();
                 }
             }
+
+           
         }
 
     
 
         function verificarUrl($url) {
             if(isset($_SESSION['url'])) {
-                $url2 = $_SESSION['url'];
-                unset($_SESSION['url']);
-                header("location:".$url2);
+                
+                
+                header("location:".$_SESSION['url']);
             }else {
 
                 header("location: ".$url."/painel/cliente");

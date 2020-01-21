@@ -11,7 +11,7 @@ class DAOProduto{
         $pdo->beginTransaction();// Inicia a transação
         try {
         $con = $pdo->prepare("INSERT INTO produto
-        VALUES (default, :nome, :preco, :descricao, :imagem, :servico)");
+        VALUES (default, :nome, :preco, :descricao, :imagem)");
         
         // $con = Conexao::getInstance()->prepare($sql);
         $con->bindValue(":nome", $produto->getNome());
@@ -20,7 +20,7 @@ class DAOProduto{
         $con->bindValue(":imagem", $produto->getImagem());
         //$produto->getDepartamento() um objeto da classe departamento
         //entao $produto->getDepartamento()->getId() retorna o id do departamento
-        $con->bindValue(":servico", $produto->getServico()->getId());
+  
       
         $con->execute();
         $this->lastId = $pdo->lastInsertId(); // Retorna o ID do cliente cadastrado
@@ -35,15 +35,11 @@ class DAOProduto{
 }
         public function listaProduto(){
             $sql = "SELECT 
-                        produto.nome,
-                        produto.preco,
-                        produto.imagem,
-                        produto.pk_produto as 'id',
-                        servico.nome as 'servico'
-                        FROM produto INNER JOIN servico 
-                        ON produto.fk_servico_produto = 
-                        servico.pk_servico"
-                        ;
+                        nome,
+                        preco,
+                        imagem,
+                        pk_produto as 'id' 
+                        FROM produto ";
                     
             $con = Conexao::getInstance()->prepare($sql);
             $con->execute();

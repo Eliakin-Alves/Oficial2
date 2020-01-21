@@ -61,7 +61,7 @@
         case 'pedidopagamento':
             
              $obj = new \LOJA\API\PagamentoVizualizar;
-             $pedido = $obj->dados;
+             
              $view = "pagamento-pay.php";
         break;
 

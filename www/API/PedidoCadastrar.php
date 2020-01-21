@@ -40,7 +40,9 @@
             $DAO = new DAOPedido();
             $this->msg = $DAO->cadastrar($obj,$_SESSION['carrinho']);
 
-            echo $this->msg;
+            if(isset($_SESSION['url'])){
+                unset($_SESSION['url']);
+            }
         }catch(Exception $e){
             $this->msg = $e->getMessage();
         }
