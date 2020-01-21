@@ -20,18 +20,23 @@ use LOJA\Model\Cliente;
 
                     if($result){//se houver resultado
                         //guardo as informações do usuario na sessão
+                        
                         $_SESSION['clienteid'] = $result['id'];
                         $_SESSION['clientenome'] = $result['nome'];
-
+                        
                         //header("location: http://www.qualificaroficina.web70113.uni5.net/painel/cliente");
                         //
                         $this->verificarUrl($url);
                        
                         echo "ok";
-                    }else{
+                        
+                    } else{
+                        
                         $this->msg = "Cliente/Senha inválidos";
                     }    
-                }catch(\Exception $e){
+                }
+                catch(\Exception $e){
+                    
                     $this->msg = $e->getMessage();
                 }
             }
@@ -47,10 +52,13 @@ use LOJA\Model\Cliente;
                 
                 header("location:".$_SESSION['url']);
             }else {
-
+                
                 header("location: ".$url."/painel/cliente");
             }
         }
+
+        
+           
     }
 
 

@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -57,7 +58,15 @@
                         </div>
                     <!-- </form> -->
                     <div class="container ">
-                        <button type="button" class="btn" ><a href="<?php echo $url; ?>/login/cliente"><i class="fas fa-user-circle"></i>Login</a></button>
+                        <button type="button" class="btn" ><a href="<?php echo $url; ?>/login/cliente">
+                        <i class="fas fa-user-circle sairight0"></i><?php if(isset($_SESSION['clientenome']))
+{
+   echo '<a href="http://localhost/Oficial2/www/painel/logoff">Logout</a>';
+}
+else
+{
+   echo '<a href="http://localhost/Oficial2/www/login/cliente">Login</a>';
+}?></a></button>
                         
                         <a href="<?php echo $url; ?>/carrinho" class="bg-yellow center"><i class="fas fa-shopping-cart"></i></a>
                     </div>

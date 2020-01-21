@@ -1,4 +1,16 @@
+
+<?php$logout = isset($_GET['logout']) ? $_GET['logout'] : "";
+
+if ($logout == 1)
+{
+unset($_SESSION['clientenome']);
+}
+?>
 <?php include "View/header.php"; ?>
+
+
+<link rel="stylesheet" href="css/estilo.css">
+
 
 
 </div>
