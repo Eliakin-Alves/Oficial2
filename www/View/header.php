@@ -60,8 +60,7 @@
 </div>
 
 <div class="btn-group p sairight">
-  <button type="button" class="btn btn-primary dropdown-toggle p" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-cog"></i>
-  Settings <span class="badge badge-light">3</span>
+  <button type="button" class="btn btn-primary dropdown-toggle p" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php  echo $_SESSION['clientenome'];?><span class="badge badge-light"></span>
   </button>
   <div class="dropdown-menu">
   <div class="no-centro">
