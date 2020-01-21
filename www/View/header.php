@@ -9,18 +9,24 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="<?php echo $url; ?>/css/estilo.css">
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
 
     <link href="https://fonts.googleapis.com/css?family=Jomolhari|Roboto&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+
+
+<!------ Include the above in your HEAD tag ---------->
+
+<script src="https://use.fontawesome.com/c560c025cf.js"></script>
     <title>QualifiCAR</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg bg-dark ">
         <div class="container">
-            <a class="" href="/Oficial2/www/"><img src="img/logo.png" class="logo" alt=""></a>
+            <a class="" href="/Oficial2/www/"><img src="<?php echo $url; ?>/img/logo.png" class="logo" alt=""></a>
 
             <button class="navbar-toggler bg-yellow-btn" type="button" data-toggle="collapse" data-target="
             #navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,8 +75,7 @@ else
 </div>
 
 <div class="btn-group p sairight">
-  <button type="button" class="btn btn-primary dropdown-toggle p" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fas fa-user-cog"></i>
-  Settings <span class="badge badge-light">3</span>
+  <button type="button" class="btn btn-primary dropdown-toggle p" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php  echo $_SESSION['clientenome'];?><span class="badge badge-light"></span>
   </button>
   <div class="dropdown-menu">
   <div class="no-centro">
