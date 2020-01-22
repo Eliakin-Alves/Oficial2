@@ -1,4 +1,6 @@
 
+
+
 <!doctype html>
 <html lang="pt-br">
   <head>
@@ -59,13 +61,13 @@
                     <!-- </form> -->
                     <div class="container ">
                         <button type="button" class="btn" ><a href="<?php echo $url; ?>/login/cliente">
-                        <i class="fas fa-user-circle sairight0"></i><?php if(isset($_SESSION['clientenome']))
-{
-   echo '<a href="http://localhost/Oficial2/www/painel/logoff">Logout</a>';
+                        <?php if(isset($_SESSION['clientenome']))
+{  
+   echo '<i class="fas fa-sign-out-alt sairight0"></i>  <a href="http://localhost/Oficial2/www/painel/logoff">Logout</a>';
 }
 else
 {
-   echo '<a href="http://localhost/Oficial2/www/login/cliente">Login</a>';
+   echo '<i class="fas fa-user-circle sairight0"></i> <a href="http://localhost/Oficial2/www/login/cliente">Login</a>';
 }?></a></button>
                         
                         <a href="<?php echo $url; ?>/carrinho" class="bg-yellow center"><i class="fas fa-shopping-cart"></i></a>
@@ -73,11 +75,24 @@ else
                 </div>
             </div>
 </div>
+ <div class="btn  sairight "><a href="<http://localhost/Oficial2/www/painel/cliente">
+<?php if(isset($_SESSION['clientenome']))
+{ 
+ echo ( $_SESSION['clientenome']) ;
+
+
+ 
+}
 
 <div class="btn-group p sairight">
   <button type="button" class="btn btn-primary p" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php  echo $_SESSION['clientenome'];?><span class="badge badge-light"></span>
   </button>
 
+
+else
+{
+   echo '';
+}?></a>
 </div>
     </nav>
     <div class="container">
