@@ -1,4 +1,4 @@
-<?php include "View/header.php";?>
+<?php include "View/header-cliente.php";?>
 <link rel="stylesheet" href="../css/estilo.css">
 
 
@@ -25,10 +25,10 @@
 <!------ Include the above in your HEAD tag ---------->
 
 <div class="container">
-	<div class="row">
-		<div class="col-sm-4 col-md-4 user-details">
+	<!-- <div class="row"> -->
+		<!-- <div class="col-sm-4 col-md-4 user-details"> -->
             <div class="user-image">
-                <img src="http://www.gravatar.com/avatar/2ab7b2009d27ec37bffee791819a090c?s=100&d=mm&r=g" alt="Karan Singh Sisodia" title="Karan Singh Sisodia" class="img-circle">
+                <!-- <img src="http://www.gravatar.com/avatar/2ab7b2009d27ec37bffee791819a090c?s=100&d=mm&r=g" alt="Karan Singh Sisodia" title="Karan Singh Sisodia" class="img-circle"> -->
             </div>
             <div class="user-info-block">
                 <div class="user-heading">
@@ -61,6 +61,16 @@
                     <div class="tab-content">
                         <div id="information" class="tab-pane active">
                             <h4>Informação da conta</h4>
+                            <form>
+                                <div class="form-group row">
+                                    <p>Nome: <?php  echo $_SESSION['clientenome'];?></p>
+                                    <!--<p>CPF: <?php  //echo $_SESSION['clientesenha'];?></p>
+                                    <p>Endereço: <?php  //echo $_SESSION['clienteendereco'];?></p>
+                                    <p>Telefone: <?php  //echo $_SESSION['clientetelefone'];?></p>
+                                    <p>Email: <?php  //echo $_SESSION['clienteemail'];?></p>
+                                    <p>Senha: <?php  //echo $_SESSION['clientesenha'];?></p>-->
+                                </div>
+                            </form>
                         </div>
                         <div id="settings" class="tab-pane">
                             <h4>Configurações</h4>
@@ -70,6 +80,59 @@
                         </div>
                         <div id="events" class="tab-pane">
                             <h4>Produtos</h4>
+                            <?php
+        @$carrinho = $_SESSION['carrinho'];
+
+        if($carrinho === null || empty($carrinho->getItems())){
+            // Inicio HTML
+            ?>
+                <p>Seu Carrinho está vazio</p>
+
+            <?php
+            // Fim HTML
+        }else{
+
+            foreach ($carrinho->getItems() as $item){
+                $produto = $item->getProduto();
+                             
+                // Inicio HTML
+            ?>
+
+                    <!-- PRODUCT -->
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-2 text-center">
+                                <img class="img-responsive" src="<?php echo $url.'/View/img/produtos/'.$produto->getImagem(); ?>" alt="prewiew" width="120" height="80">
+                        </div>
+                        <div class="col-12 text-sm-center col-sm-12 text-md-left col-md-6">
+                            <h4 class="product-name"><strong><?php echo $produto->getNome(); ?></strong></h4>
+                            <h4>
+                                <small><?php echo $produto->getDescricao(); ?></small>
+                            </h4>
+                        </div>
+                        <div class="col-12 col-sm-12 text-sm-center col-md-4 text-md-right row">
+                            <div class="col-3 col-sm-3 col-md-6 text-md-right" style="padding-top: 5px">
+                                <h6><strong><?php echo $produto->getPreco(); ?><span class="text-muted"></span></strong></h6>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-4">
+                                <div class="quantity">
+                                    <input type="number" step="1" max="99" min="1" value="1" title="Qty" class="qty"
+                                           size="4">
+                                </div>
+                            </div>
+                            <div class="col-2 col-sm-2 col-md-2 text-right">
+                                
+
+                                    <a href="<?php echo $url; ?>/carrinho/remover/<?php echo $produto->getId(); ?>" class="btn btn-outline-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></a>
+                               
+                            </div>
+                        </div>
+                    </div>
+                    <hr>   
+                <?php   
+                    // Fim HTML
+                    }
+                }
+            ?>
                         </div>
                     </div>
                 </div>

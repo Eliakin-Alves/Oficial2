@@ -75,7 +75,7 @@ else
                 </div>
             </div>
 </div>
- <div class="btn  sairight "><a href="<http://localhost/Oficial2/www/painel/cliente">
+ <div class="btn  sairight "><a href="http://localhost/Oficial2/www/painel/cliente">
 <?php if(isset($_SESSION['clientenome']))
 { 
  echo ( $_SESSION['clientenome']) ;
@@ -84,9 +84,7 @@ else
  
 }
 
-<div class="btn-group p sairight">
-  <button type="button" class="btn btn-primary p" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php  echo $_SESSION['clientenome'];?><span class="badge badge-light"></span>
-  </button>
+
 
 
 else
