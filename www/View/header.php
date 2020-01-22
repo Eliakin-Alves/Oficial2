@@ -84,11 +84,6 @@ else
  
 }
 
-<div class="btn-group p sairight">
-  <button type="button" class="btn btn-primary p" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?php  echo $_SESSION['clientenome'];?><span class="badge badge-light"></span>
-  </button>
-
-
 else
 {
    echo '';
