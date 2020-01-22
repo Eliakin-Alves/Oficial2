@@ -1,4 +1,4 @@
-<?php include "View/header-cliente.php";?>
+<?php include "View/header.php";?>
 <link rel="stylesheet" href="../css/estilo.css">
 
 
