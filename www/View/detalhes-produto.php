@@ -3,11 +3,11 @@
 <div class="saitop">
 
 <!-- COMEÇOU o SECTION <>-->
-
+<?php foreach($lista as $produto) { ?>
 <section class="tmme ">
 <div class="card  mb-3 " >
   <div class="card-body">
-  <?php foreach($lista as $produto) { ?>
+  
     <a href="#"><i class="sairight0 far fa-heart"></i>Favorita</a>  |
     <a href="#"> 
   <i class="sairight0 fas fa-share-alt">
@@ -15,8 +15,7 @@
 
   
     <div class="oll">
-  <img class="img-fluid reajusti " src="<?php echo $url;['imagem'] ?>/View/img/produtos/<?php echo $produto['imagem'] ?>
-  " alt="Alternate Text" />
+  <img class="img-fluid reajusti " src="<?php echo $url;['imagem'] ?>/View/img/produtos/<?php echo $produto['imagem'] ?>" alt="Alternate Text" />
 
 </div>
 
@@ -44,13 +43,15 @@
   <div class="card-body">R$:<?php echo number_format($produto['preco'],2,",",".");?></div>
  
   <div class="card-body">
-    <h5 class="card-title" >A vista de <span style="text-decoration:line-through"> R$120,00</span> vai para R$95,00</h5>
+    <h5 class="card-title" >A vista de <span style="text-decoration:line-through"> R$<?php echo number_format($produto['preco'],2,",",".");?>
+    </span> vai para R$950,00</h5>
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
     
   </div>
 </div>
-<?php } ?>
+
 </aside>
+<?php }?>
 </div>
 
 <?php include "View/footer.php";?>
