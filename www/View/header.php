@@ -75,7 +75,7 @@ else
                 </div>
             </div>
 </div>
- <div class="btn  sairight "><a href="<http://localhost/Oficial2/www/painel/cliente">
+ <div class="btn  sairight "><a href="http://localhost/Oficial2/www/painel/cliente">
 <?php if(isset($_SESSION['clientenome']))
 { 
  echo ( $_SESSION['clientenome']) ;
