@@ -28,19 +28,19 @@
                 <dd><a href="mailto:#" class="bg-yellow">eliakin.caio.gabriel@gmail.com</a></dd>
               </dl>
               <dl class="contact-list">
-                <dt>Telefones: </dt>
-                <dd><a href="tel:#" class="bg-yellow">https://karosearch.com</a> <span>or</span> <a href="tel:#" class="bg-yellow">https://karosearch.com</a>
+                <dt>WhatsApp: </dt>
+                <dd><a href="tel:#" class="bg-yellow">Eliakin: (21)99212-0201</a> <span>e</span> <a href="tel:#" class="bg-yellow">Gabriel:(21)96956-6546</a>
                 </dd>
               </dl>
             </div>
             <div class="col-md-4 col-xl-3">
               <h5>Links</h5>
               <ul class="nav-list">
-                <li><a href="#" class="bg-yellow">Sobre</a></li>
-                <li><a href="#" class="bg-yellow">Projetos</a></li>
-                <li><a href="#" class="bg-yellow">Blog</a></li>
-                <li><a href="#" class="bg-yellow">Contatos</a></li>
-                <li><a href="#" class="bg-yellow">Preços</a></li>
+                <li><a href="<?php echo $url; ?>/quem/somos/" class="bg-yellow">Sobre</a></li>
+                <li><a href="<?php echo $url; ?>/quem/somos/" class="bg-yellow">Blog</a></li>
+                <li><a href="<?php echo $url; ?>/quem/somos/" class="bg-yellow">Projetos</a></li>
+                <li><a href="<?php echo $url; ?>/quem/somos/" class="bg-yellow">Contatos</a></li>
+                <li><a href="<?php echo $url; ?>/home" class="bg-yellow">Preços</a></li>
               </ul>
             </div>
           </div>
