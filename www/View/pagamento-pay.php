@@ -61,7 +61,7 @@
   <button type="submit" class="btn btn-primary">Confirmar</button>
 </form>
 <hr>
-<h4 class="mb-3">Pagamento <button type="button" class="btn btn-light">Gerar Boleto</button></h4>
+<h4 class="mb-3">Pagamento <button type="button b" class="btn btn-light">Gerar Boleto</button></h4>
 
 <?php echo $_SESSION['idpedido'];?>
 <h6> </h6>
