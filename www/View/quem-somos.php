@@ -53,7 +53,7 @@ QualifiCAR - Entender para atender!.</p></td>
 
 O cadastro de dados pessoais é essencial para que cada pedido chegue dentro do prazo de entrega e em perfeitas condições em seu destino final. Temos o compromisso de proteger as informações cadastrais de nossos clientes, que não são vendidas, trocadas ou divulgadas, exceto quando necessário para entrega de pedidos, processos de cobrança ou promoções, desde que estas sejam solicitadas pelo cliente.
 
-A Rhino também traça o perfil dos visitantes, utilizando cookies e informações de navegação (sessão do browser) para aperfeiçoar o atendimento e oferecer conteúdo, ofertas e promoções personalizadas. Esses dados também se encontram sob proteção total em nosso sistema, sendo registrados pela QualifiCAR de forma automatizada, sem qualquer tipo de manipulação humana. Aconselhamos que não divulguem informações pessoais, de usuário e senha a terceiros, mesmo amigos e parentes. Esse cuidado é muito importante para manter todos os seus dados em segurança.
+A QualifiCAR também traça o perfil dos visitantes, utilizando cookies e informações de navegação (sessão do browser) para aperfeiçoar o atendimento e oferecer conteúdo, ofertas e promoções personalizadas. Esses dados também se encontram sob proteção total em nosso sistema, sendo registrados pela QualifiCAR de forma automatizada, sem qualquer tipo de manipulação humana. Aconselhamos que não divulguem informações pessoais, de usuário e senha a terceiros, mesmo amigos e parentes. Esse cuidado é muito importante para manter todos os seus dados em segurança.
 
 Ser transparente com nosso cliente é nossa maior preocupação, por isso contamos com empresas certificadoras e utilizamos uma plataforma que nos garante total confiança (Vtex). Qualquer alteração em nossa política de privacidade será devidamente divulgada neste espaço.</p></td>
                                 </tr>
@@ -77,7 +77,7 @@ O Site está disponível para aqueles com capacidade civil para utilizá-la. Cas
 
 A proprietária e responsável pelo site se reserva o direito de modificar a qualquer momento a apresentação, configuração e disponibilização do Site. O mesmo se aplica a estes Termos e Condições de Uso, estabelecidos como condição fundamental para a utilização do serviço.
 
-Recomenda-se que o usuário leia também a nossa Política de Privacidade e Política de Troca e Devolução (no caso de lojas virtuais)</p></td>
+Recomenda-se que o usuário leia também a nossa Política de Privacidade (no caso de lojas virtuais)</p></td>
                                 </tr>
                             </tbody>
                         </table>
