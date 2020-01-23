@@ -61,7 +61,7 @@
         case 'pedidopagamento':
             
              $obj = new \LOJA\API\PagamentoVizualizar;
-             
+             $pagamento = $obj->pagamento;
              $view = "pagamento-pay.php";
         break;
 
@@ -85,12 +85,28 @@
             $cliente = $obj->dados;
             $view = "vizualizar-cliente-id.php";
             break;
+            
         case 'painelcliente':
            
             $obj = new \LOJA\API\ClienteLogar($url);
+
+            $obj2 = new \LOJA\API\PedidoListar;
+
+            $pedidos = $obj2->lista;
+            
+
                 
             $view = "painel-cliente.php";
             break;
+
+            case 'painelpedido':
+                $obj = new \LOJA\API\PedidoVizualizar;
+                $dados = $obj->dados;
+                $produtos = $obj->produtos;
+
+                $view = "vizualizar-pedido.php";
+            break;
+
             case 'meucadastro':
            
                 $obj = new \LOJA\API\ClienteLogar($url);

@@ -10,7 +10,7 @@ use LOJA\DAO\DAOPedido;
     function __construct(){
     
         $obj = new DAOPedido();
-        $this->pagamento = $obj->buscaPorId($_SESSION['idpedido']);
+        $this->pagamento = $obj->buscarPedidoCliente($_SESSION['idpedido']);
     }
 }
 

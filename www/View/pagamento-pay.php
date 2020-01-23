@@ -64,9 +64,8 @@
 <h4 class="mb-3">Pagamento <button type="button" class="btn btn-light">Gerar Boleto</button></h4>
 
 <?php echo $_SESSION['idpedido'];?>
-<input id="frete" name="frete" type="text" placeholder="Frete" value="<?php echo $pedido['data_pedido']; ?>"  
-class="form-control input-md" required="">
 <h6> </h6>
+
 <div class="d-block my-3">
   <div class="custom-control custom-radio">
     <input id="credito" name="paymentMethod" type="radio" class="custom-control-input" checked required>
