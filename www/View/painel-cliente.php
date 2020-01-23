@@ -33,7 +33,7 @@
             <div class="user-info-block">
                 <div class="user-heading">
                     <h3><?php  echo $_SESSION['clientenome'];?></h3>
-                    <span class="help-block"><?php  echo $_SESSION['clientenome'];?></span>
+                    <span class="help-block">Perfil do <?php  echo $_SESSION['clientenome'];?></span>
                 </div>
                 <ul class="navigation">
                     <li class="active">
