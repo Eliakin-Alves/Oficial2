@@ -48,7 +48,7 @@
                             <a class="nav-link bg-yellow" href="<?php echo $url; ?>/servicos/visualizar">Serviços</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link bg-yellow" href="#">Contato</a>
+                            <a class="nav-link bg-yellow" href="<?php echo $url; ?>/quem/somos">Sobre</a>
                         </li>
                     </ul>
                     <!-- <form class="form-inline my-2 my-lg-0"> -->

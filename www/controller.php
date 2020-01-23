@@ -247,6 +247,9 @@
         case 'carrinho':
             $view = "cart.php";
         break;
+        case 'quemsomos':
+            $view = "quem-somos.php";
+        break;
 
         case 'pedidofinalizar':
       //  \LOJA\incluedes\Seguranca::restritoUsuario();
