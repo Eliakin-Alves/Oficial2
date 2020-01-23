@@ -49,6 +49,7 @@ class DAOPedido{
 
     public function listarPedidoCliente($idCliente){
         $sql="SELECT 
+        pedido.pk_pedido,
         pedido.data_pedido,
         sum(produto.preco*item.quantidade) AS total
         
@@ -58,11 +59,19 @@ class DAOPedido{
           ON item.fk_pedido = pedido.pk_pedido
           INNER JOIN produto
           ON produto.pk_produto = item.fk_produto
-          WHERE cliente.pk_cliente = :id";
+          WHERE cliente.pk_cliente = :id
+        GROUP BY pedido.pk_pedido";
 
+    
           $con= Conexao::getInstance()->prepare($sql);
           $con->bindValue(":id",$idCliente);
-          $result = $con->execute();
+          $con->execute();
+          $lista = array();
+
+          while($produto = $con->fetch(\PDO::FETCH_ASSOC)){
+              $lista[] = $produto;
+          }
+          return $lista;
 
     }
     public function buscaPorId($id){

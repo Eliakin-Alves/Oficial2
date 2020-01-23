@@ -1,23 +1,17 @@
-<?php
+<?php 
 
-namespace LOJA\API;//Local desta classe
-use LOJA\DAO\DAOProduto;
+namespace LOJA\API;
+
+    use  LOJA\DAO\DAOProduto;
 
     class ProdutoVizualizar{
 
-        public $dados;
-
-        public function __construct(){
+            public $lista;
     
+            function __construct(){
 
-        try{
-            $DAO = new DAOProduto();
-            $this->dados = $DAO->buscaPorId($_GET['id']);
-            
-        }catch(\Exception $e){
-            $this->dados = $e->getMessage();
+    $obj = new DAOProduto();
+    $this->lista = $obj->detalheProduto($_GET['id']);
+            }
         }
-    }  
-}
-
 ?>
