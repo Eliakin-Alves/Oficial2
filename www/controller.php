@@ -125,9 +125,10 @@
                 $lista = $obj->lista;
                 $view = "lista-produto.php";
                 break;
+
                 case 'detalhesproduto':
-                    $obj = new \LOJA\API\ProdutoListar;
-                    $lista = $obj->lista;
+                    $obj = new \LOJA\API\ProdutoVizualizar;
+                    $detalhe = $obj->lista;
                     $view = "detalhes-produto.php";
                     break;
 

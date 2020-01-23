@@ -70,6 +70,17 @@ class DAOProduto{
 
             return $produto;
         }
+        public function detalheProduto($id){
+
+            $sql = "SELECT * FROM produto WHERE pk_produto = :id";
+            $con = Conexao::getInstance()->prepare($sql);
+            $con->bindValue(":id", $id);
+            $con->execute();
+            
+            $detalhe = $con->fetch(\PDO::FETCH_ASSOC);   
+            return $detalhe;
+
+        }
         public function buscaPorNome($busca)
         {
             $sql = "SELECT * FROM produto WHERE nome LIKE = %:busca%";
