@@ -63,11 +63,11 @@
                         <button type="button" class="btn" ><a href="<?php echo $url; ?>/login/cliente">
                         <?php if(isset($_SESSION['clientenome']))
 {  
-   echo '<i class="fas fa-sign-out-alt sairight0"></i>  <a href="http://localhost/Oficial2/www/painel/logoff">Logout</a>';
+   echo '<i class="fas fa-sign-out-alt sairight0"></i>  <a href="http://localhost/Oficial2/www/painel/logoff">Sair</a>';
 }
 else
 {
-   echo '<i class="fas fa-user-circle sairight0"></i> <a href="http://localhost/Oficial2/www/login/cliente">Login</a>';
+   echo '<i class="fas fa-user-circle sairight0"></i> <a href="http://localhost/Oficial2/www/login/cliente">Entrar</a>';
 }?></a></button>
                         
                         <a href="<?php echo $url; ?>/carrinho" class="bg-yellow center"><i class="fas fa-shopping-cart"></i></a>
