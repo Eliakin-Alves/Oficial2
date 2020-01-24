@@ -30,6 +30,7 @@
             ?>
 
                     <!-- PRODUCT -->
+                    <div class="container">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-2 text-center">
                                 <img class="img-responsive" src="<?php echo $url.'/View/img/produtos/'.$produto->getImagem(); ?>" alt="prewiew" width="120" height="80">
@@ -54,7 +55,7 @@
                                 
 
                                     <a href="<?php echo $url; ?>/carrinho/remover/<?php echo $produto->getId(); ?>" class="btn btn-outline-danger btn-xs"><i class="fa fa-trash" aria-hidden="true"></i></a>
-                               
+                                    </div>
                             </div>
                         </div>
                     </div>
