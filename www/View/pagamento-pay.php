@@ -63,8 +63,11 @@
 <hr>
 <h4 class="mb-3">Pagamento <button type="button b" class="btn btn-light">Gerar Boleto</button></h4>
 
-<?php echo $_SESSION['idpedido'];?>
-<h6> </h6>
+
+<h6>R$<?php echo $pagamento->getTotal(); ?> </h6>
+<h6>Frete: R$ <?php echo $pagamento->getFrete(); ?> </h6>
+<h6>Entraga em : <?php echo $pagamento->getDias(); ?> dias</h6>
+
 
 <div class="d-block my-3">
   <div class="custom-control custom-radio">

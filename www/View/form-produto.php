@@ -1,5 +1,5 @@
 <?php include "View/header-adm.php";?>
-<h1>CADASTRO DO ADMIN</h1>
+<h1>Cadastrar produto</h1>
     
     <form class="form-horizontal" method="post" action="cadastrar" enctype="multipart/form-data">
     <fieldset>
