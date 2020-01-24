@@ -42,7 +42,7 @@
 <aside class="tmme1">
 <div class="card  mb-3" >
   <div class="card-body no-centro">R$:<?php echo number_format($detalhe['preco'],2,",",".");?></div>
-  <a class="btn btn-primary" href="<?php echo $url;?>/carrinho/adicionar/<?php echo $produto ['id']?>">Adicionar no carrinho</a>
+  <a class="btn btn-primary" href="<?php echo $url;?>/carrinho/adicionar/<?php echo $detalhe['pk_produto']?>">Adicionar no carrinho</a>
   <div class="card-body">
     <h5 class="card-title" >A vista de <span style="text-decoration:line-through"> R$<?php echo number_format($detalhe['preco'],2,",",".");?>
     </span> vai para R$950,00</h5>

@@ -3,6 +3,7 @@
 <h1 class="no-centro">Qualificar Produtos</h1>
 <hr>
 </div>
+<div class="container">
 <aside>
 
 <div>
@@ -17,6 +18,7 @@
 </div>
 </div>
 </aside>
+</div>
 <section>
 <div class="container">
 <div class="row " id="ads">
