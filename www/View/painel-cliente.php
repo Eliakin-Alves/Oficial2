@@ -35,7 +35,7 @@
                     <h3><?php  echo $_SESSION['clientenome'];?></h3>
                     <span class="help-block">Perfil do <?php  echo $_SESSION['clientenome'];?></span>
                 </div>
-                <ul class="navigation">
+                <ul class="navigation center">
                     <li class="active">
                         <a data-toggle="tab" href="#information">
                             <span class="glyphicon glyphicon-user"><i class="fas fa-user-alt"></i></span>

@@ -15,7 +15,7 @@
                 <button id="signin" class="btn btn-primary">Logar</button>
             </div>    
             <div class="second-column">
-                <h2 class="title title-second">Criar Conta</h2>
+                <h2 class="title title-second">ADM</h2>
                 <div class="social-media">
                     <ul class="list-social-media">
                         <a class="link-social-media" href="#">
@@ -35,11 +35,11 @@
                         </a>
                     </ul>
                 </div><!-- social media -->
-                <p class="description description-second">Ou use seu email para registrar:</p>
+                <p class="description description-second">Ou use seu email para logar:</p>
                
                 <i class="user1 far fa-user-circle fa-4x"></i>
                     
-                <a href="http://localhost/Oficial2/www/cliente/cadastrar">   <button  class=" btn btn-second" >Registrar</button>  </a>      
+                      
                 </form>
             </div><!-- second column -->
         </div><!-- first content -->
@@ -47,8 +47,8 @@
             <div class="first-column">
                 <h2 class="title title-primary">Olá :)</h2>
                 <p class="description description-primary">Insira seus dados pessoais</p>
-                <p class="description description-primary">Começe a usufruir Dos nosso Benefícios</p>
-                <button id="signup" class="btn btn-primary">Registrar</button>
+                <p class="description description-primary">Começe a produzir</p>
+                <button id="signup" class="btn btn-primary">Voltar</button>
             </div>
             <div class="second-column">
                 <h2 class="title title-second">Logue com sua conta </h2>

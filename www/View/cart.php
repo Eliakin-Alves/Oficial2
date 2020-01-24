@@ -78,16 +78,11 @@
                     <div class="row">
                     <form method="post" action="<?php echo $url;?>/frete/calcular">
                         <label>Frente</label>
-                        <input type="text" size="20" name="cep"/>
-                        <button class>Calcular</button>
+                        <input class=" " type="text" size="20" name="cep"/>
+                        <button class="btn btn-primary">Calcular</button>
                         </form>
                      
-                        <div class="col-6">
-                            <input type="text" class="form-control" placeholder="Código do cupom">
-                        </div>
-                        <div class="col-6">
-                            <input type="submit" class="btn btn-default" value="Usar cupom">
-                        </div>
+                      
                     </div>
                     <?php
                         if(isset($_POST['cep'])){

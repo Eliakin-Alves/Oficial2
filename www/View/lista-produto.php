@@ -16,6 +16,8 @@
   <hr>
 </div>
 </div>
+</aside>
+<section>
 <div class="container">
 <div class="row " id="ads">
     <?php foreach($lista as $produto) { ?>
@@ -36,7 +38,7 @@
             </div>
             <div class="card-body text-center">
                 <div class="ad-title m-auto">
-                    <h5><?php echo $produto['nome']?></h5> <a class="detalhe" href="/Oficial2/www/detalhes/produto" ><i class="fas fa-info-circle fa-2x "></i></a>
+                    <h5><?php echo $produto['nome']?></h5> <a class="detalhe" href="<?php echo $url;?>/detalhes/produto/<?php echo $produto ['id']?>" ><i class="fas fa-info-circle fa-2x "></i></a>
                 </div>
                 <a class="ad-btn" href="<?php echo $url;?>/carrinho/adicionar/<?php echo $produto ['id']?>">Comprar</a>
             </div>
@@ -45,8 +47,8 @@
  
     <?php } ?>
     </div>
-</aside>
-<section>
+
+</section>
 <!--<table class="table">
     <thead>
         <tr>

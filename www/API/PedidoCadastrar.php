@@ -26,23 +26,21 @@
      function efetuarPedido(){
 
         try{
-            $c =new Cliente();
+           /* $c =new Cliente();
             $c->setId($_SESSION['clienteid']);// Inserir um id já existente
-            $c->setNome($_SESSION['clientenome']);
-
+            $c->setNome($_SESSION['clientenome']);*/
+            $frete = $_SESSION['frete'];
             $obj = new Pedido();
             //$c->setId();
-            $obj->setData('2019-12-25');
-            $obj->setFrete(20.00);
-            $obj->setDias(5);
-            $obj->setCliente($c);
+            $obj->setData(date("d-m-y"));
+            $obj->setFrete($frete->getValor());
+            $obj->setDias($frete->getPrazoEntrega());
+           // $obj->setCliente($c);
 
             $DAO = new DAOPedido();
             $this->msg = $DAO->cadastrar($obj,$_SESSION['carrinho']);
 
-            if(isset($_SESSION['url'])){
-                unset($_SESSION['url']);
-            }
+            
         }catch(Exception $e){
             $this->msg = $e->getMessage();
         }
