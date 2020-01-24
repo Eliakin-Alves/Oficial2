@@ -9,12 +9,19 @@ use LOJA\Model\Cliente;
         private $frete;
         private $dias;
         private $cliente;
+        private $total;
 
         function __construct(){
         }
             //get Set
-
+            public function getTotal(){
+                return $this->total;
+            }
         
+            public function setTotal($total){
+                $this->total = $total;
+            }
+
         public function getId(){
             return $this->id;
         }

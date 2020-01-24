@@ -102,6 +102,7 @@
             case 'painelpedido':
                 $obj = new \LOJA\API\PedidoVizualizar;
                 $dados = $obj->dados;
+                
                 $produtos = $obj->produtos;
 
                 $view = "vizualizar-pedido.php";

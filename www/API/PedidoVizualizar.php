@@ -14,7 +14,9 @@ class PedidoVizualizar{
      
         try{
             $DAO = new DAOPedido();
+            
             $this->dados = $DAO->detalhaPedido($_GET['id']);
+            
             $this->produtos = $DAO->listaItens($_GET['id']);
         }catch(\Exception $e){
             $this->dados = $e->getMessage();

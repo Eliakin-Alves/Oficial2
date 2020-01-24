@@ -138,6 +138,7 @@ class DAOPedido{
         pedido.pk_pedido,
         pedido.data_pedido,
         pedido.dias,
+        pedido.frete,
         SUM(produto.preco*item.quantidade) as total
         FROM pedido INNER JOIN cliente ON pedido.fk_cliente = cliente.pk_cliente
 
@@ -145,7 +146,7 @@ class DAOPedido{
         ON item.fk_pedido = pedido.pk_pedido
 
         INNER JOIN produto
-        ON produto.pk_produto = item.fk_produto
+        ON produto.pk_produto = item.pk_produto
 
         WHERE pedido.pk_pedido = :id";
 
@@ -154,13 +155,15 @@ class DAOPedido{
         $con->execute();
         $pedido = $con->fetch(\PDO::FETCH_ASSOC);
 
+        
+
         return $pedido;
     }
 
     public function listaItens($idPedido){
         $sql = "SELECT * FROM `item`
         INNER JOIN produto
-        ON produto.pk_produto = item.fk_produto
+        ON produto.pk_produto = item.pk_produto
         WHERE fk_pedido = :id";
         $con = Conexao::getInstance()->prepare($sql);
         $con->bindValue(":id",$idPedido);
@@ -170,6 +173,7 @@ class DAOPedido{
         while($pedido = $con->fetch(\PDO::FETCH_ASSOC)){
             $lista[] = $pedido;
         }
+        
         return $lista;
 
     }

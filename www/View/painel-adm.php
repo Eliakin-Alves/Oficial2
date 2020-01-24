@@ -17,7 +17,7 @@
   <a href="#"><i class="farra fab fa-opencart"></i> <strong class="mr-auto">Produtos </strong></a>
   <a href="#"><i class="farra fas fa-users"></i> <strong class="mr-auto">Clientes </strong></a>
   <a href="#"><i class="farra far fa-chart-bar"></i> <strong class="mr-auto">Relatórios </strong></a>
-  <a href="#">Link 4</a>
+  <a href="#"></a>
 </div>
 
 
