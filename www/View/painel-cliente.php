@@ -16,7 +16,7 @@
   <h1 class="display-4">Olá, Bem-vindo!</h1>
   <p class="lead">Esse é o Seu Painel , Onde você consegue atulizar seus dados e vê seus Pedidos.</p>
   <hr class="my-4">
-  <p>Estamos dispoto a da a melhor qualidade e uma ótima comodidade, qualquer Coisa entre em <a href="#">contato conosco.</a></p>
+  <p>Estamos dispoto a da a melhor qualidade e uma ótima comodidade, qualquer Coisa entre em <a href="<?php echo $url;?>/quem/somos/">contato conosco.</a></p>
   <a type="button" data-dismiss="alert" aria-label="Close" class="btn btn-primary btn-lg" href="#" role="button">Fecha</a>
   
 </div>

@@ -448,6 +448,7 @@ background-color: #bbb;
   background-color: #bbb;
   
 }
+
 .preto{
   background-color: #bbbb;
 }
@@ -610,7 +611,7 @@ a:hover {
 }
     
 .kpx_login .kpx_socialButtons a {
-    color: white; // In yourUse @body-bg 
+    color: white; /* In yourUse @body-bg */
 	opacity:0.9;
 }
 .kpx_login .kpx_socialButtons a:hover {
