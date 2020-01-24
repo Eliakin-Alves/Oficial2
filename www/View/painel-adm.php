@@ -4,15 +4,15 @@
 
 <!-- Example single danger button -->
 
-<div class="oll1">
-    <?php  echo $_SESSION['usuarionome'];?>
+
+    
     <!-- Button trigger modal -->
-   
-</div>
+    
+
     
    
 </div>
-<div class="navbar-light nav-item bg-light vertical-menu">
+<div class="navbar-light nav-item bg-light vertical-menu oll">
   <a href="#" class=""><i class="farra far fa-file"></i> <strong class="mr-auto">Pedidos </strong></a>
   <a href="#"><i class="farra fab fa-opencart"></i> <strong class="mr-auto">Produtos </strong></a>
   <a href="#"><i class="farra fas fa-users"></i> <strong class="mr-auto">Clientes </strong></a>
@@ -20,8 +20,23 @@
   <a href="#"></a>
 </div>
 
+<div class="jumbotron alert alert-dismissible fade show">
+  <h1 class="display-4">Bem-vindo de Volta ADMIN!</h1>
+  <p class="lead">Esse é o Seu Painel , Onde você consegue atulizar  dados.</p>
+  <hr class="my-4">
+  <p>Um Ótimo dia   </p>
+  <a type="button" data-dismiss="alert" aria-label="Close" class="btn btn-primary btn-lg" href="#" role="button">Fecha</a>
+  
+</div>
 
-    
+
+<hr>
+<div class="container">
+  <hr>
+ <h1 class="no-centro" > Painel ADMIN </h1>
+ <hr>
+ </div>
+<hr>
 
    <script src="js/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
