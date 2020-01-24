@@ -22,7 +22,7 @@
 
             // PARTE DO SERVIÇO <>
         case 'servicocadastrar':
-          //  \LOJA\incluedes\Seguranca::restritoAdm();
+            \LOJA\incluedes\Seguranca::restritoAdm();
 
             $obj = new \LOJA\API\ServicoCadastrar;
             $msg = $obj->msg;
@@ -30,7 +30,7 @@
             break;
 
         case 'servicolistar':
-
+            \LOJA\incluedes\Seguranca::restritoAdm();
             $obj = new \LOJA\API\ServicoListar;
             $lista = $obj->lista;
             $view = "lista-servico.php";
@@ -38,7 +38,7 @@
 
         case 'servicovizualizar':
               
-            //\LOJA\incluedes\Seguranca::restritoAdm();
+            \LOJA\incluedes\Seguranca::restritoAdm();
             $obj = new \LOJA\API\ServicoVizualizar;
             $servico = $obj->dados;
             $view = "vizualizar-servico-id.php";
