@@ -30,7 +30,7 @@
     
     
 </div>
-<p class="">Detalhes do produto ilustrativo , você ganha gratis a troca desse troca na nossa oficina</p>
+<p class="no-centro">Todos nosso produtos são de total qualiadade e ótimo rendimento , você ganha gratis a troca em nossa oficina.</p>
 </div>
 
 
@@ -41,8 +41,8 @@
 <!--ACABOU A SECTION AQUI ^^ E COMEÇOU A ASIDE <>-->
 <aside class="tmme1">
 <div class="card  mb-3" >
-  <div class="card-body">R$:<?php echo number_format($detalhe['preco'],2,",",".");?></div>
- 
+  <div class="card-body no-centro">R$:<?php echo number_format($detalhe['preco'],2,",",".");?></div>
+  <a class="btn btn-primary" href="<?php echo $url;?>/carrinho/adicionar/<?php echo $produto ['id']?>">Adicionar no carrinho</a>
   <div class="card-body">
     <h5 class="card-title" >A vista de <span style="text-decoration:line-through"> R$<?php echo number_format($detalhe['preco'],2,",",".");?>
     </span> vai para R$950,00</h5>
