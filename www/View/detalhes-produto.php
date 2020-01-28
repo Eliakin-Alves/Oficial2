@@ -41,14 +41,18 @@
 <!--ACABOU A SECTION AQUI ^^ E COMEÇOU A ASIDE <>-->
 <aside class="tmme1">
 <div class="card  mb-3" >
-  <div class="card-body no-centro">R$:<?php echo number_format($detalhe['preco'],2,",",".");?></div>
-  <a class="btn btn-primary" href="<?php echo $url;?>/carrinho/adicionar/<?php echo $detalhe['pk_produto']?>">Adicionar no carrinho</a>
+  <div class="card-body "><h1>R$:<?php echo number_format($detalhe['preco'],2,",",".");?></h1></div>
+  
   <div class="card-body">
-    <h5 class="card-title" >A vista de <span style="text-decoration:line-through"> R$<?php echo number_format($detalhe['preco'],2,",",".");?>
-    </span> vai para R$950,00</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    
+    <h5 class="card-title" >A vista desconto de <strong>30% </strong> </h5>
+    <hr>
+  
+    <p class="card-text">Este produto é vendido por <a href="#">FK Pneus</a> e entregue por QualifiCar, que garante a sua compra, do pedido à entrega.</p>
+    <a class="btn btn-primary" href="<?php echo $url;?>/carrinho/adicionar/<?php echo $detalhe['pk_produto']?>">Adicionar no carrinho</a>
   </div>
+
+  
+  <hr>
 </div>
 
 </aside>
