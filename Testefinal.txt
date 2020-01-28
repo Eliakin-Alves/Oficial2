@@ -1,0 +1,15 @@
+*33
+tests-779
+view-2496
+Model-631
+includes-155
+DAO-618
+CSS-1206
+API-696
+
+Total linha de código -6614
+
+Boostrap-2736/6488
+Fontawesome-90598
+
+Com os fremeowks - 106436
